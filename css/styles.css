@@ -1,0 +1,183 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin: 20px 0;
+}
+/* Header */
+header {
+    background-color: #AC87C5;
+    color: white;
+    padding: 50px 0;
+}
+
+/* Navbar */
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #a7a5a5;
+}
+
+section {
+    margin: 40px 0;
+    text-align: justify;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Project */
+.project {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.project img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Profile */
+.profile-picture {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 500px; 
+    height: 500px; 
+    margin: 20px auto; 
+}
+
+.profile-picture img {
+    max-width: 100%;
+    height: auto;
+    display: block; 
+}
+.profile-picture h2 {
+    margin-top: 10px;
+    font-size: 18px; 
+    color: #000000; 
+}
+
+
+/* Contact Section */
+#contact {
+    text-align: left; 
+}
+
+/* Social Icons */
+#contact .social-icons {
+    margin-top: 20px;
+    text-align: center; 
+}
+
+#contact .social-icons a {
+    margin-right: 15px;
+    color: #333; 
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#contact .social-icons a:hover {
+    color: #AC87C5; 
+}
+
+/* Contact Information */
+#contact p {
+    margin-bottom: 20px; 
+    font-size: 16px;
+    color: #555; 
+}
+
+/* Scroll */
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #AC87C5;
+    color: white;
+    border: none;
+    border-radius: 50%; 
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #8764a3;
+}
+
+
+
+/* Footer */
+footer {
+    position: relative;
+    background-color: #FFE5E5;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+
+    header {
+        padding: 30px 0; 
+    }
+
+    nav {
+        float: none; 
+        text-align: center;
+    }
+
+    nav li {
+        display: block; 
+        margin-left: 0;
+        margin-bottom: 10px; 
+    }
+}
